@@ -21,3 +21,9 @@ Rsync backup script for Windows
 `$ ~/rsync_backup_win usb`
 
 Script defaults include `rsync -n`, "dry run" option to test everything first. Comment it out: `#RSYNCOP="$RSYNCOP -n"` for actual rsync execution 
+
+## Notes
+1. See comments in the script for an encrypted TrueCrypt drive mount example
+2. Common rsync options are explained in script comments as well, defaults should suite most use cases
+3. Script contains default "Windows" exclusions for rsync. You can add more exclusions easily per backup profile and per source drive letter using provided examples
+4. There is special case of handing running Parallels Virtual Machines if you have any, they are suspended before rsync and resumed after. Same approach can be used for VirtualBox, VMware, etc. 
