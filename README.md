@@ -1,6 +1,8 @@
 Rsync backup script for Windows
 ====================
 
+The motivation and scenarios for this script are explained in this blog post: http://istomin.de/2014/03/27/backup-windows-using-rsync/
+
 ## How to use
 
 1. Download and install [Cygwin](http://cygwin.com/), make sure to install rsync
